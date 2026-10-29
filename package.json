@@ -1,0 +1,54 @@
+{
+  "name": "dsh-gitee-enterprise",
+  "version": "1.6.10",
+  "private": false,
+  "description": "Manage Gitee Enterprise programs and work items (tasks, requirements, bugs) from the Harness Web UI.",
+  "keywords": [
+    "dsh",
+    "dsh-plugin",
+    "gitee",
+    "workbench",
+    "issues"
+  ],
+  "type": "module",
+  "main": "index.js",
+  "exports": {
+    ".": "./index.js",
+    "./client": "./client.js",
+    "./locale/*.json": "./locale/*.json",
+    "./icon": "./icon.svg",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "index.js",
+    "client.js",
+    "lib/*.js",
+    "cordis.patch.yml",
+    "locale/*.json",
+    "icon.svg",
+    "README.md"
+  ],
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "immediately": true,
+      "inject": [
+        "@deepseek-ai/dsh-client-locale",
+        "@deepseek-ai/dsh-client-ui-layout",
+        "@deepseek-ai/dsh-client-ui-sidebar"
+      ]
+    }
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cnHuaShao/dsh-gitee-enterprise.git"
+  },
+  "homepage": "https://github.com/cnHuaShao/dsh-gitee-enterprise#readme",
+  "bugs": {
+    "url": "https://github.com/cnHuaShao/dsh-gitee-enterprise/issues"
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "meta": {
+    "title": "Gitee Enterprise Workbench",
+    "description": "Connect a Gitee personal token or enterprise MCP token to browse and manage work items (tasks, requirements, bugs) in enterprise programs."
+  }
+}

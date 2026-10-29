@@ -1,0 +1,4 @@
+- insert:
+    - id: gitee-enterprise
+      name: 'dsh-gitee-enterprise'
+      config: {}
